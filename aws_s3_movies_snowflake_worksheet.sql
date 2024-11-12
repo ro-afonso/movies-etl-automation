@@ -6,7 +6,7 @@ CREATE OR REPLACE STORAGE INTEGRATION aws_s3_movies_integration
   TYPE = EXTERNAL_STAGE
   STORAGE_PROVIDER = 'S3'
   ENABLED = TRUE
-  STORAGE_AWS_ROLE_ARN = 'YOUR_ARN' //Adapt with your AWS ARN
+  STORAGE_AWS_ROLE_ARN = 'YOUR_ARN' //Adapt with your S3 role ARN
   STORAGE_ALLOWED_LOCATIONS = ('s3://movies-data-bucket/');
   
 SHOW INTEGRATIONS;
@@ -40,7 +40,7 @@ CREATE OR REPLACE TABLE snowflake_top_rated_movies (
     popularity FLOAT,
     vote_avg FLOAT,
     poster_path STRING,
-    cast_name_role_photo STRING
+    cast_name_role_photo_order STRING
 );
 
 CREATE OR REPLACE TABLE snowflake_most_profitable_movies LIKE snowflake_top_rated_movies;
