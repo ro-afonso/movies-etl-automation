@@ -32,7 +32,7 @@ Follow the steps below to set up and deploy the pipeline. The video demos visual
 
 ### AWS Lambda and S3
 
-https://github.com/user-attachments/assets/5578f15d-b070-42db-8565-169b68eb4d02
+https://github.com/user-attachments/assets/09f6619d-2c10-4b11-9f32-f0685687ec15
 
 1) Create a new Lambda function with "Python 3.12" as the runtime
 2) Copy the Python code from "movie_data_extract.py" and paste it into your Lambda function
@@ -46,7 +46,7 @@ https://github.com/user-attachments/assets/5578f15d-b070-42db-8565-169b68eb4d02
 
 ### Snowflake
 
-https://github.com/user-attachments/assets/97ecae8f-4ace-4255-8d20-b7656314c7d0
+https://github.com/user-attachments/assets/75fe2694-4ffe-4beb-90c9-816e2f157e84
 
 1) Copy the SQL code from "aws_s3_movies_snowflake_worksheet.sql" and paste it into your Snowflake worksheet
 2) Create a new policy in AWS to provide bucket access to Snowflake (refer to the [official documentation](https://docs.snowflake.com/en/user-guide/data-load-s3-config-storage-integration#creating-an-iam-policy))
@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/97ecae8f-4ace-4255-8d20-b7656314c7d0
 
 ### Power BI Dashboard
 
-https://github.com/user-attachments/assets/db4b8e47-9ed6-41cc-9e40-f510627cbc19
+https://github.com/user-attachments/assets/e2a4e14a-78ca-44a3-8256-3f670688fc2b
 
 1) Open "TMDB_Dashboard_github.pbix" with Power BI and access the Advanced Editor under Data Sources
 2) Uncomment the Snowflake code section and delete the local setup code found below
